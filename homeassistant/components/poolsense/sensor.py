@@ -29,6 +29,7 @@ SENSOR_TYPES: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         key="pH",
         icon="mdi:pool",
+        native_unit_of_measurement=ELECTRIC_POTENTIAL_MILLIVOLT,
         name="pH",
     ),
     SensorEntityDescription(
@@ -47,8 +48,7 @@ SENSOR_TYPES: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         key="Last Seen",
         icon="mdi:clock",
-        name="Last Seen",
-        device_class=SensorDeviceClass.TIMESTAMP,
+        name="Last Seen"
     ),
     SensorEntityDescription(
         key="Chlorine High",
